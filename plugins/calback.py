@@ -28,15 +28,15 @@ async def cb_handler(client, query: CallbackQuery):
     try:
         if data == "home":
             btn = InlineKeyboardMarkup([
-                [InlineKeyboardButton("•  ᴍᴇs ᴄᴏᴍᴍᴀɴᴅᴇs  •", callback_data='help')],
-                [InlineKeyboardButton('• ᴍɪsᴇs à ᴊᴏᴜʀ', url='https://t.me/hyoshassistantbot'), InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ •', url='https://t.me/tout_manga_confondu')],
-                [InlineKeyboardButton('• ᴀ ᴘʀᴏᴘᴏs', callback_data='about'), InlineKeyboardButton('sᴏᴜʀᴄᴇ •', callback_data='source')]
+                [InlineKeyboardButton("•⚙️ Mes Outils •", callback_data='help')],
+                [InlineKeyboardButton('• Update', url='https://t.me/BotZFlix'), InlineKeyboardButton('Support •', url='https://t.me/BotZflixsupport')],
+                [InlineKeyboardButton('• INFOS', callback_data='about'), InlineKeyboardButton('Film & Série•', url='t.me/ZFlixTeam')]
             ])
             caption =Txt.START_TXT.format(query.from_user.mention)
         
         elif data == "caption":
             btn = InlineKeyboardMarkup([
-                [InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ", url='https://t.me/tout_manga_confondu'), InlineKeyboardButton("ʀᴇᴛᴏᴜʀ •", callback_data="help")]
+                [InlineKeyboardButton("• Support", url='https://t.me/BotZflixsupport'), InlineKeyboardButton("ʀᴇᴛᴏᴜʀ •", callback_data="help")]
             ])
             caption = Txt.CAPTION_TXT
         
@@ -50,7 +50,7 @@ async def cb_handler(client, query: CallbackQuery):
             btn = InlineKeyboardMarkup([
                             [InlineKeyboardButton("• ғᴏʀᴍᴀᴛ ᴅᴇ ʀᴇɴᴏᴍᴍᴀɢᴇ ᴀᴜᴛᴏᴍᴀᴛɪǫᴜᴇ •", callback_data='file_names')],
                             [InlineKeyboardButton('• ᴠɪɢɴᴇᴛᴛᴇ', callback_data='thumbnail'), InlineKeyboardButton('ʟᴇ́ɢᴇɴᴅᴇ •', callback_data='caption')],
-                            [InlineKeyboardButton('• ᴍᴇᴛᴀᴅᴏɴɴᴇ́ᴇs', callback_data='meta'), InlineKeyboardButton('ғᴀɪʀᴇ ᴜɴ ᴅᴏɴ •', callback_data='donate')],
+                            [InlineKeyboardButton('• ᴍᴇᴛᴀᴅᴏɴɴᴇ́ᴇs', callback_data='meta'), InlineKeyboardButton('Nous faire don  •', callback_data='donate')],
                             [InlineKeyboardButton(f'• {btn_sec_text}', callback_data='secanciel'), InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ •', callback_data='premiumx')],
                             [InlineKeyboardButton(f'• Extraire depuis : {src_txt}', callback_data='toogle_src')],
                             [InlineKeyboardButton('• ᴀᴄᴄᴜᴇɪʟ', callback_data='home')]
@@ -66,7 +66,7 @@ async def cb_handler(client, query: CallbackQuery):
         
         elif data == "donate":
             btn = InlineKeyboardMarkup([
-                [InlineKeyboardButton("• ʀᴇᴛᴏᴜʀ", callback_data="help"), InlineKeyboardButton("ᴘʀᴏᴘʀɪᴇᴛᴀɪʀᴇ •", url='https://t.me/hyoshassistantBot')]
+                [InlineKeyboardButton("• ʀᴇᴛᴏᴜʀ", callback_data="help"), InlineKeyboardButton("Faire Don •", url='https://t.me/Kingcey')]
             ])
             caption = Txt.DONATE_TXT
         
@@ -100,19 +100,19 @@ async def cb_handler(client, query: CallbackQuery):
                 caption=Txt.PREMIUM_TXT
                 btn=InlineKeyboardMarkup([
                     [InlineKeyboardButton("• Free Points", callback_data="free_points")],
-                    [InlineKeyboardButton("• ʀᴇᴛᴏᴜʀ", callback_data="help"), InlineKeyboardButton("ᴀᴄʜᴇᴛᴇʀ ᴘʀᴇᴍɪᴜᴍ •", url='https://t.me/hyoshassistantBot')]
+                    [InlineKeyboardButton("• ʀᴇᴛᴏᴜʀ", callback_data="help"), InlineKeyboardButton("ᴀᴄʜᴇᴛᴇʀ ᴘʀᴇᴍɪᴜᴍ •", url='https://t.me/Kingcey')]
                 ])
         
         elif data == "plans":
                 caption=Txt.PREPLANS_TXT
                 btn=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("• ғᴇʀᴍᴇʀ", callback_data="close"), InlineKeyboardButton("ᴀᴄʜᴇᴛᴇʀ ᴘʀᴇᴍɪᴜᴍ •", url='https://t.me/hyoshassistantBot')]
+                    [InlineKeyboardButton("• ғᴇʀᴍᴇʀ", callback_data="close"), InlineKeyboardButton("ᴀᴄʜᴇᴛᴇʀ ᴘʀᴇᴍɪᴜᴍ •", url='https://t.me/Kingcey')]
                 ])
         elif data == "about":
             caption=Txt.ABOUT_TXT
             btn=InlineKeyboardMarkup([
-                [InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ", url='https://t.me/tout_manga_confondu'), InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅᴇs •", callback_data="help")],
-                [InlineKeyboardButton("• ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/hyoshassistantbot'), InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ •", url='https://t.me/tout_manga_confondu')],
+                [InlineKeyboardButton("• sᴜᴘᴘᴏʀᴛ", url='https://t.me/BotZflixsupport'), InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅᴇs •", callback_data="help")],
+                [InlineKeyboardButton("• ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/Kingcey'), InlineKeyboardButton("ɴᴇᴛᴡᴏʀᴋ •", url='https://t.me/KGCAnime')],
                 [InlineKeyboardButton("• ʀᴇᴛᴏᴜʀ •", callback_data="home")]
             ])
         
@@ -229,13 +229,13 @@ async def cb_handler(client, query: CallbackQuery):
             caption = (
                 "**Free Points**\n\n"
                 "Vous avez choisi de soutenir notre bot. Vous pouvez le faire de plusieurs manières :\n\n"
-                "1. **Faire un don** : Soutenez-nous financièrement en envoyant un don à [Hyoshcoder](https://t.me/hyoshcoder).\n"
+                "1. **Faire un don** : Soutenez-nous financièrement en envoyant un don à [Hyoshcoder](https://t.me/Kingcey).\n"
                 "2. **Partager le bot** : Invitez vos amis à utiliser notre bot en partageant le lien ci-dessous.\n"
                 "3. **Regarder une publicité** : Gagnez des points en regardant une petite publicité.\n\n"
                 "**Comment ça marche ?**\n"
                 "- Chaque fois que vous partagez le bot et qu'un ami s'inscrit, vous gagnez des points.\n"
                 "- Les points peuvent varier entre 5 et 20 points par action.\n\n"
-                "Merci de votre soutien ! 🙏 [Support](https://t.me/hyoshcoder)"
+                "Merci de votre soutien ! 🙏 [Support](https://t.me/Kingcey)"
             )
         
         elif data.startswith("setmedia_"):
@@ -257,7 +257,7 @@ async def cb_handler(client, query: CallbackQuery):
             btn = InlineKeyboardMarkup([
                             [InlineKeyboardButton("• ғᴏʀᴍᴀᴛ ᴅᴇ ʀᴇɴᴏᴍᴍᴀɢᴇ ᴀᴜᴛᴏᴍᴀᴛɪǫᴜᴇ •", callback_data='file_names')],
                             [InlineKeyboardButton('• ᴠɪɢɴᴇᴛᴛᴇ', callback_data='thumbnail'), InlineKeyboardButton('ʟᴇ́ɢᴇɴᴅᴇ •', callback_data='caption')],
-                            [InlineKeyboardButton('• ᴍᴇᴛᴀᴅᴏɴɴᴇ́ᴇs', callback_data='meta'), InlineKeyboardButton('ғᴀɪʀᴇ ᴜɴ ᴅᴏɴ •', callback_data='donate')],
+                            [InlineKeyboardButton('• ᴍᴇᴛᴀᴅᴏɴɴᴇ́ᴇs', callback_data='meta'), InlineKeyboardButton('Nous Faire Don •', callback_data='donate')],
                             [InlineKeyboardButton(f'• {btn_sec_text}', callback_data='secanciel'), InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ •', callback_data='premiumx')],
                             [InlineKeyboardButton(f'• Extraire depuis : {src_txt}', callback_data='toogle_src')],
                             [InlineKeyboardButton('• ᴀᴄᴄᴜᴇɪʟ', callback_data='home')]
@@ -279,7 +279,7 @@ async def cb_handler(client, query: CallbackQuery):
             btn = InlineKeyboardMarkup([
                             [InlineKeyboardButton("• ғᴏʀᴍᴀᴛ ᴅᴇ ʀᴇɴᴏᴍᴍᴀɢᴇ ᴀᴜᴛᴏᴍᴀᴛɪǫᴜᴇ •", callback_data='file_names')],
                             [InlineKeyboardButton('• ᴠɪɢɴᴇᴛᴛᴇ', callback_data='thumbnail'), InlineKeyboardButton('ʟᴇ́ɢᴇɴᴅᴇ •', callback_data='caption')],
-                            [InlineKeyboardButton('• ᴍᴇᴛᴀᴅᴏɴɴᴇ́ᴇs', callback_data='meta'), InlineKeyboardButton('ғᴀɪʀᴇ ᴜɴ ᴅᴏɴ •', callback_data='donate')],
+                            [InlineKeyboardButton('• ᴍᴇᴛᴀᴅᴏɴɴᴇ́ᴇs', callback_data='meta'), InlineKeyboardButton('Nous Faire Don •', callback_data='donate')],
                             [InlineKeyboardButton(f'• {btn_sec_text}', callback_data='secanciel'), InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ •', callback_data='premiumx')],
                             [InlineKeyboardButton(f'• Extraire depuis : {src_txt}', callback_data='toogle_src')],
                             [InlineKeyboardButton('• ᴀᴄᴄᴜᴇɪʟ', callback_data='home')]
