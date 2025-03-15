@@ -19,13 +19,13 @@ ADMIN_USER_ID = settings.ADMIN
 is_restarting = False
 
 
-ON = [[InlineKeyboardButton('mᴇ́tᴀᴅᴏɴᴇᴇs ᴀᴄᴛɪᴠᴇ́ᴇs', callback_data='metadata_1'),
+ON = [[InlineKeyboardButton('META-DATA activé', callback_data='metadata_1'),
        InlineKeyboardButton('✅', callback_data='metadata_1')],
-      [InlineKeyboardButton('Dᴇ́fɪɴɪʀ ᴅᴇs mᴇ́tᴀᴅᴏɴᴇᴇs ᴘᴇʀsᴏɴɴᴀʟɪsᴇ́ᴇs', callback_data='custom_metadata')]]
+      [InlineKeyboardButton('Définir des META-DONNEES', callback_data='custom_metadata')]]
 
-OFF = [[InlineKeyboardButton('mᴇ́tᴀᴅᴏɴᴇᴇs ᴅᴇ́sᴀᴄᴛɪᴠᴇ́ᴇs', callback_data='metadata_0'),
+OFF = [[InlineKeyboardButton('META-DATA désactiver', callback_data='metadata_0'),
         InlineKeyboardButton('❌', callback_data='metadata_0')],
-       [InlineKeyboardButton('Dᴇ́fɪɴɪʀ ᴅᴇs mᴇ́tᴀᴅᴏɴᴇᴇs ᴘᴇʀsᴏɴɴᴀʟɪsᴇ́ᴇs', callback_data='custom_metadata')]]
+       [InlineKeyboardButton('Définir des META-DONNEES', callback_data='custom_metadata')]]
 
 
 @Client.on_message(filters.private & filters.command(["start", 
@@ -67,11 +67,12 @@ async def command(client, message: Message):
                 await m.delete()  
 
                 buttons = InlineKeyboardMarkup([
-                    [InlineKeyboardButton("• ᴍᴇs ᴄᴏᴍᴍᴀɴᴅᴇs •", callback_data='help')],
-                    [InlineKeyboardButton('• ᴍɪsᴇs à ᴊᴏᴜʀ', url='https://t.me/hyoshassistantbot'),
-                     InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ •', url='https://t.me/tout_manga_confondu')],
-                    [InlineKeyboardButton('• ᴀ ᴘʀᴏᴘᴏs', callback_data='about'),
-                     InlineKeyboardButton('sᴏᴜʀᴄᴇ •', callback_data='source')]
+                    [InlineKeyboardButton("• ⚙️ MEs Outils •", callback_data='help')],
+                    [InlineKeyboardButton('• Update', url='https://t.me/BotZFlix'),
+                     InlineKeyboardButton('Support •', url='https://t.me/BoptZFliSupport')]
+                    [InlineKeyboardButton('• INFOS', callback_data='about'),
+                     InlineKeyboardButton('Film & Séries •', url='t.me/ZFlixTeam')]
+                    [InlineKeyboardButton('• KGC-Anime', url='https://t.me/KGCAnime')]
                 ])
                 
                 if args and args[0].startswith("refer_"):
@@ -122,9 +123,9 @@ async def command(client, message: Message):
                 command_parts = message.text.split("/autorename", 1)
                 if len(command_parts) < 2 or not command_parts[1].strip():
                     caption = (
-                        "**Vᴇᴜɪʟʟᴇᴢ ᴘʀᴏᴠɪᴅᴇʀ ᴜɴ ɴᴏᴜᴠᴇᴀᴜ ɴᴏᴍ ᴀᴘʀès ʟᴀ ᴄᴏᴍᴍᴀɴᴅᴇ /ᴀᴜᴛᴏʀᴇɴᴀᴍᴇ**\n\n"
+                        "**Vᴇᴜɪʟʟᴇᴢ ᴘʀᴏᴠɪᴅᴇʀ ᴜɴ ɴᴏᴜᴠᴇᴀᴜ ɴᴏᴍ ᴀᴘʀès ʟᴀ ᴄᴏᴍᴍᴀɴᴅᴇ /autorename**\n\n"
                         "Pour ᴄᴏᴍᴍᴇɴᴄᴇʀ ʟ'ᴜᴛɪʟɪsᴀᴛɪᴏɴ :\n"
-                        "**Fᴏʀᴍᴀᴛ ᴅ'ᴇxᴀᴍᴘʟᴇ :** `ᴍᴏɴSᴜᴘᴇʀVɪᴅᴇᴏ [saison] [episode] [quality]`"
+                        "**Fᴏʀᴍᴀᴛ ᴅ'ᴇxᴀᴍᴘʟᴇ :** `Spy X family [saison] [episode] [quality]`"
                     )
                     await message.reply_text(caption)
                     return
@@ -239,7 +240,7 @@ async def command(client, message: Message):
             
             elif command == "donate":
                 buttons = InlineKeyboardMarkup([
-                    [InlineKeyboardButton(text="ʀᴇᴛᴏᴜʀ", callback_data="help"), InlineKeyboardButton(text="ᴘʀᴏᴘʀɪᴇᴛᴀɪʀᴇ", url='https://t.me/hyoshassistantBot')]
+                    [InlineKeyboardButton(text="ʀᴇᴛᴏᴜʀ", callback_data="help"), InlineKeyboardButton(text="Faire un don", url='https://t.me/kingcey')]
                 ])
                 caption=Txt.DONATE_TXT
                 
@@ -254,7 +255,7 @@ async def command(client, message: Message):
             
             elif command == "premium":
                 buttons = InlineKeyboardMarkup([
-                    [InlineKeyboardButton("ᴘʀᴏᴘʀɪᴇᴛᴀɪʀᴇ", url="https://t.me/hyoshassistantBot"), InlineKeyboardButton("ғᴇʀᴍᴇʀ", callback_data="close")]
+                    [InlineKeyboardButton("Faire un don", url="https://t.me/Kingcey"), InlineKeyboardButton("ғᴇʀᴍᴇʀ", callback_data="close")]
                 ])
                 caption=Txt.PREMIUM_TXT
                 if img:
@@ -268,7 +269,7 @@ async def command(client, message: Message):
             
             elif command == "plan":
                 buttons = InlineKeyboardMarkup([
-                    [InlineKeyboardButton("ᴘᴀʏᴇʀ ᴠᴏᴛʀᴇ ᴀʙᴏɴɴᴇᴍᴇɴᴛ", url="https://t.me/hyoshassistantBot"), InlineKeyboardButton("ғᴇʀᴍᴇʀ", callback_data="close")]
+                    [InlineKeyboardButton("ᴘᴀʏᴇʀ ᴠᴏᴛʀᴇ ᴀʙᴏɴɴᴇᴍᴇɴᴛ", url="https://t.me/kingcey"), InlineKeyboardButton("ғᴇʀᴍᴇʀ", callback_data="close")]
                 ])
                 caption=Txt.PREPLANS_TXT
                 if img:
