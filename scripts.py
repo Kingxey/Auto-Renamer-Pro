@@ -9,129 +9,129 @@ class Scripts():
 <b>» ᴇᴛᴀ</b> : {4}"""
 
     START_TXT = """
-<b>ꜱᴀʟᴜᴛ! {}  
+<b><blockquote> Salut! {}  </blockquote>
 
-ᴊᴇ ꜱᴜɪꜱ ʜɪɴᴀᴛᴀ ʜʏᴜɢᴀ, ᴋᴜɴᴏɪᴄʜɪ ᴅᴜ ᴄʟᴀɴ ʜʏᴜɢᴀ ᴇᴛ, ᴀᴜᴊᴏᴜʀᴅ'ʜᴜɪ, ᴠᴏᴛʀᴇ ᴀꜱꜱɪꜱᴛᴀɴᴛᴇ ᴅéᴠᴏᴜéᴇ. 🌀
+Je suis Yor Forger, connue sous le nom de princesse Hibara 👸,|| et aussi l'épouse de Kingcey 🌀.||
 
-» ᴛᴏᴜᴛ ᴄᴏᴍᴍᴇ ᴊᴇ ᴘʀᴏᴛèɢᴇ ᴄᴇᴜx ǫᴜɪ ᴍᴇ ꜱᴏɴᴛ ᴄʜᴇʀꜱ ᴀᴠᴇᴄ ᴍᴏɴ ʙʏᴀᴋᴜɢᴀɴ, ᴊᴇ ᴠᴀɪꜱ ᴍ'ᴀꜱꜱᴜʀᴇʀ ǫᴜᴇ ᴠᴏꜱ ꜰɪᴄʜɪᴇʀꜱ ꜱᴏɪᴇɴᴛ ʀᴇɴᴏᴍᴍéꜱ ᴀᴠᴇᴄ ᴘʀéᴄɪꜱɪᴏɴ ᴇᴛ ꜱᴛʏʟᴇ.  
-» ᴀᴊᴏᴜᴛᴇᴢ ᴜɴᴇ ʟéɢᴇɴᴅᴇ ᴘᴇʀꜱᴏɴɴᴀʟɪꜱéᴇ, ᴜɴᴇ ᴍɪɴɪᴀᴛᴜʀᴇ éʟéɢᴀɴᴛᴇ ᴇᴛ ʟᴀɪꜱꜱᴇᴢ-ᴍᴏɪ ꜱéǫᴜᴇɴᴄᴇʀ ᴠᴏꜱ ꜰɪᴄʜɪᴇʀꜱ à ʟᴀ ᴘᴇʀꜰᴇᴄᴛɪᴏɴ.  
+Tout comme je protège ceux qui me sont chers 💖, je vais m'assurer que vos fichiers soient renommés avec précision et style 🎨.  
+Ajoutez une légende personnalisée 📝, une miniature élégante ✨ et laissez-moi séquencer vos fichiers à la perfection 📁. 
 </b>
 """
-    FILE_NAME_TXT = """<b>» <u>ᴄᴏɴꜰɪɢᴜʀᴇʀ ʟᴇ ꜰᴏʀᴍᴀᴛ ᴅᴇ ʀᴇɴᴏᴍᴍᴀɢᴇ ᴀᴜᴛᴏᴍᴀᴛɪǫᴜᴇ</u></b>
+    FILE_NAME_TXT = """<b>» <u>Configurer le format de renommage automatique</u></b>
 
-<b>ᴠᴀʀɪᴀʙʟᴇs :</b>
-➲ episode - ᴘᴏᴜʀ ʀᴇᴍᴘʟᴀᴄᴇʀ ʟᴇ ɴᴜᴍᴇ́ʀᴏ ᴅᴇ ʟ'ᴇᴘɪsᴏᴅᴇ  
-➲ saison - ᴘᴏᴜʀ ʀᴇᴍᴘʟᴀᴄᴇʀ ʟᴇ ɴᴜᴍᴇ́ʀᴏ ᴅᴇ ʟa saison
-➲ quality - ᴘᴏᴜʀ ʀᴇᴍᴘʟᴀᴄᴇʀ ʟᴀ ǫᴜᴀʟɪᴛᴇ́  
+<b>Variables :</b>
+➲ `episode` - Pour remplacer le numéro de l'épisode 
+➲ `saison` - Pour remplacer le numéro de la saison
+➲ `quality` - Pour remplacer la qualité    
 
-<b>‣ ᴘᴀʀ ᴇxᴀᴍᴘʟᴇ :- </b> <code> /autorename Suicide Squad [Ssaison - EPepisode - [Quality] [Dual] @hyoshmangavf </code>
+<b>‣ Voici un exemple :- </b> <code> /autorename Spy X family [Ssaison - EPepisode - [Quality] [Dual] @KGCAnime </code>
 
-<b>‣ /autorename : ʀᴇɴᴏᴍᴍᴇᴢ ᴠᴏs ꜰɪʟᴇs ᴍᴜʟᴛɪᴍᴇᴅɪᴀ ᴇɴ ɪɴᴄʟᴜᴀɴᴛ ʟᴇs ᴠᴀʀɪᴀʙʟᴇs 'ᴇᴘɪsᴏᴅᴇ' ᴇᴛ 'ǫᴜᴀʟɪᴛᴇ́' ᴅᴀɴs vᴏᴛʀᴇ ᴛᴇxᴛᴇ, ᴘᴏᴇᴜʀ ᴇxᴛʀᴀɪʀᴇʀ l'ᴇᴘɪsᴏᴅᴇ ᴇᴛ ʟa ǫᴜᴀʟɪᴛᴇ́ ᴘʀᴇ́sᴇɴᴛs ᴅᴀɴs lᴇ ɴᴏᴍ ᴅᴇ ꜰɪʟᴇ ᴏʀɪɢɪɴᴀʟ.</b>"""
-
-
-    ABOUT_TXT = f"""<b>❍ ᴍᴏɴ ɴᴏᴍ : <a href="https://t.me/hyoshassistantbot">ɢᴇ ᴀᴜᴛᴏ ʀᴇɴᴀᴍᴇ</a>  
-❍ ᴅᴇ́ᴠᴇʟᴏᴘᴘᴇᴜʀ : <a href="https://t.me/hyoshassistantBot">ᴘʀᴏᴘʀɪᴇ́ᴛᴀɪʀᴇ</a>  
-❍ ɢɪᴛʜᴜʙ : <a href="https://github.com/ hyoshassistantBot">ᴘʀᴏᴘʀɪᴇ́ᴛᴀɪʀᴇ</a>  
-❍ ʟᴀɴɢᴀɢᴇ : <a href="https://www.python.org/">ᴘʏᴛʜᴏɴ</a>  
-❍ ʙᴀsᴇ ᴅᴇ ᴅᴏɴɴᴇ́ᴇs : <a href="https://www.mongodb.com/">ᴍᴏɴɢᴏᴅʙ</a>  
-❍ ʜᴇ́ʙᴇʀɢᴇ́ sᴜʀ : <a href="https://t.me/hyoshassistantbot">ᴠᴘs</a>  
-❍ ᴄᴀɴᴀʟ ᴘʀɪɴᴄɪᴘᴀʟ : <a href="https://t.me/hyoshmangavf">ᴀɴɪᴍᴇ ᴄʀᴜɪsᴇ</a>  
-
-➻ ᴄʟɪǫᴜᴇᴢ sᴜʀ ʟᴇs ʙᴏᴜᴛᴏɴs ᴄɪ-ᴅᴇssᴏᴜs ᴘᴏᴜʀ ᴏʙᴛᴇɴɪʀ ᴅᴇ ʟ'ᴀɪᴅᴇ ᴇᴛ ᴅᴇs ɪɴғᴏʀᴍᴀᴛɪᴏɴs ʙᴀsɪǫᴜᴇs sᴜʀ ᴍᴏɪ.</b>"""
+<b>‣ /autorename : Renommez vos fichiers multimédia en incluant les variables 'épisode' et 'qualité' dans votre texte, pour extraire l'épisode et la qualité présents dans le nom de fichier original.</b>"""
 
 
-    THUMBNAIL_TXT = """<b><u>» ᴘᴏᴜʀ ᴅéꜰɪɴɪʀ ᴜɴᴇ ᴍɪɴɪᴀᴛᴜʀᴇ ᴘᴇʀꜱᴏɴɴᴀʟɪꜱéᴇ</u></b>
+    ABOUT_TXT = f"""<b>❍ JE suis : <a href="https://t.me/Auto_Renamer_Zbot">Princesse Hibara</a>  
+❍ Développeur : <a href="https://t.me/Kingcey"> ◡̈⃝ㅤ🇰ιηg¢єу</a>   
+❍ Language : <a href="https://www.python.org/">Python</a>  
+❍ DATA-BASE : <a href="https://www.mongodb.com/">MONGO-DB</a>  
+❍ Serveur : <a href="https://t.me/hyoshassistantbot">Octeko</a>  
+❍ Canal D'anime : <a href="https://t.me/KGCAnime">KGCAnime</a>  
+
+➻ Cliquez sur les boutons ci-dessous pour obtenir de l'aide et des informations basiques sur moi.</b>"""
+
+
+    THUMBNAIL_TXT = """<b><u>» Pour définir une miniature personnalisée.</u></b>
     
-➲ /start : ᴇɴᴠᴏʏᴇᴢ ɴ'ɪᴍᴘᴏʀᴛᴇ ǫᴜᴇʟʟᴇ ᴘʜᴏᴛᴏ ᴘᴏᴜʀ ʟᴀ ᴅéꜰɪɴɪʀ ᴀᴜᴛᴏᴍᴀᴛɪǫᴜᴇᴍᴇɴᴛ ᴄᴏᴍᴍᴇ ᴍɪɴɪᴀᴛᴜʀᴇ.
-➲ /del_thumb : ᴜᴛɪʟɪꜱᴇᴢ ᴄᴇᴛᴛᴇ ᴄᴏᴍᴍᴀɴᴅᴇ ᴘᴏᴜʀ ꜱᴜᴘᴘʀɪᴍᴇʀ ᴠᴏᴛʀᴇ ᴀɴᴄɪᴇɴɴᴇ ᴍɪɴɪᴀᴛᴜʀᴇ.
-➲ /view_thumb : ᴜᴛɪʟɪꜱᴇᴢ ᴄᴇᴛᴛᴇ ᴄᴏᴍᴍᴀɴᴅᴇ ᴘᴏᴜʀ ᴠᴏɪʀ ᴠᴏᴛʀᴇ ᴍɪɴɪᴀᴛᴜʀᴇ ᴀᴄᴛᴜᴇʟʟᴇ.
+➲ /start : Envoyez n'importe quelle photo pour la définir automatiquement comme miniature.
+➲ /del_thumb : Utilisez cette commande pour supprimer votre ancienne miniature.
+➲ /view_thumb : Utilisez cette commande pour voir votre miniature actuelle.
 
-ɴᴏᴛᴇ : ꜱɪ ᴀᴜᴄᴜɴᴇ ᴍɪɴɪᴀᴛᴜʀᴇ ɴ'ᴇꜱᴛ ᴇɴʀᴇɢɪꜱᴛʀéᴇ ᴅᴀɴꜱ ʟᴇ ʙᴏᴛ, ʟᴀ ᴍɪɴɪᴀᴛᴜʀᴇ ᴅᴜ ꜰɪᴄʜɪᴇʀ ᴏʀɪɢɪɴᴀʟ ꜱᴇʀᴀ ᴜᴛɪʟɪꜱéᴇ ᴘᴏᴜʀ ʟᴇ ꜰɪᴄʜɪᴇʀ ʀᴇɴᴏᴍᴍé."""
+Note : Si aucune miniature n'est enregistrée dans le bot, la miniature du fichier original sera utilisée pour le fichier renommé."""
 
-    CAPTION_TXT = """<b><u>» ᴘᴏᴜʀ ᴅéꜰɪɴɪʀ ᴜɴᴇ ʟéɢᴇɴᴅᴇ ᴘᴇʀꜱᴏɴɴᴀʟɪꜱéᴇ ᴇᴛ ʟᴇ ᴛʏᴘᴇ ᴅᴇ ᴍéᴅɪᴀ</u></b>
+    CAPTION_TXT = """<b><u>» Pour définir une légende personnalisée et le type de média.</u></b>
     
-<b>ᴠᴀʀɪᴀʙʟᴇs :</b>         
-ᴛᴀɪʟʟᴇ: <code>{filesize}</code>  
-ᴅᴜʀéᴇ: <code>{duration}</code>  
-ɴᴏᴍ_ꜰɪʟᴇ: <code>{filename}</code>
+<b>Variables :</b>         
+TAILLES: <code>{filesize}</code>  
+DUREE: <code>{duration}</code>  
+NOM: <code>{filename}</code>
 
-➲ /set_caption : ᴘᴏᴜʀ ᴅéꜰɪɴɪʀ ᴜɴᴇ ʟéɢᴇɴᴅᴇ ᴘᴇʀꜱᴏɴɴᴀʟɪꜱéᴇ.  
-➲ /see_caption : ᴘᴏᴜʀ ᴠᴏɪʀ ᴠᴏᴛʀᴇ ʟéɢᴇɴᴅᴇ ᴘᴇʀꜱᴏɴɴᴀʟɪꜱéᴇ.  
-➲ /del_caption : ᴘᴏᴜʀ sᴜᴘᴘʀɪᴍᴇʀ ᴠᴏᴛʀᴇ ʟéɢᴇɴᴅᴇ ᴘᴇʀꜱᴏɴɴᴀʟɪꜱéᴇ.
+➲ /set_caption : Pour définir une légende personnalisée.  
+➲ /see_caption : Pour voir votre légende personnalisée.  
+➲ /del_caption : Pour supprimer votre légende personnalisée.
 
-» ᴘᴀʀ ᴇxᴀᴍᴘʟᴇ :- /set_caption ɴᴏᴍ ᴅᴇ ꜰɪʟᴇ: {filename}"""
+» Par exemple : - /set_caption nom de fichier: {filename}"""
 
 
     PROGRESS_BAR = """\n
-<b>» ᴛᴀɪʟʟᴇ</b> : {1} | {2}  
-<b>» ꜰᴀɪᴛ</b> : {0}%  
-<b>» ᴠɪᴛᴇssᴇ</b> : {3}/s  
-<b>» ᴇᴛᴀ</b> : {4}"""
+<b>» TAILLE</b> : {1} | {2}  
+<b>» Pourcentage</b> : {0}%  
+<b>» Vitesse</b> : {3}/s  
+<b>» Temps</b> : {4}"""
 
 
-    DONATE_TXT = """<blockquote>ᴍᴇʀᴄɪ ᴅᴇ mᴏɴᴛʀᴇʀ ᴅᴇ ʟ'ɪɴtéʀêt pᴏᴜʀ lᴇs dᴏɴs</blockquote>
+    DONATE_TXT = """Nous croyons en un monde meilleur, et avec votre aide, nous pouvons y parvenir. 🌍💖 Chaque contribution, quel que soit son montant, compte énormément pour nous ! Que vous puissiez donner 1€, 10€, ou même plus, chaque geste compte et nous rapproche un peu plus de notre objectif. 🙏✨
 
-<b><i>💞 Sɪ vᴏᴜs ᴀᴍᴇᴢ ɴᴏᴛʀᴇ bᴏᴛ, n'ʜéᴄɪtᴇz pᴀs à fᴀɪʀᴇ ᴜɴ dᴏɴ dᴇ n'iᴍᴘᴏʀᴛᴇ qᴜᴇl mᴏɴᴛᴀɴᴛ $10, $20, $50, $100, ᴇᴛᴄ.</i></b>
+💻📱 C'est tellement simple de faire un don ! Que vous soyez confortablement installé chez vous avec votre ordinateur ou en déplacement avec votre téléphone, le processus de don est rapide et sécurisé. En quelques clics, vous pouvez faire partie de quelque chose de grand. 💫
 
-Lᴇs dᴏɴs sᴏɴt vʀᴀɪᴍᴇɴᴛ ᴀpᴘʀéᴄɪéᴇs ᴇᴛ ᴀɪᴅᴇɴᴛ ᴀᴜ dᴇᴠᴇʟᴏᴘᴘᴇᴍᴇɴᴛ dᴜ bᴏᴛ.
+💙 Pourquoi donner ? Votre soutien nous permet de financer des projets essentiels, d'aider ceux qui en ont besoin et de promouvoir des initiatives qui ont un véritable impact dans notre communauté. Grâce à des donations comme la vôtre, nous pouvons offrir des ressources, des formations et un soutien aux personnes qui en ont le plus besoin. 🎁✨
 
-<u>Vᴏᴜs pᴏᴜᴠᴇz ᴀʟᴇʀᴛᴇᴢ ᴜɴ ᴅᴏɴ </u>
+🤝 Rejoignez notre communauté ! En faisant un don, vous ne vous contentez pas de soutenir une cause : vous rejoignez une communauté de personnes passionnées et engagées, prêtes à faire la différence ensemble. Plus nous sommes nombreux, plus notre impact est puissant ! 💪🌈
 
-Pᴀʏᴇʀ ɪᴄɪ - <code> @hyoshassistantBot </code>
+📣 Ne sous-estimez jamais le pouvoir de votre don ! Chaque euro compte et peut façonner des vies ! Faites un don aujourd'hui et devenez un acteur du changement ! 🙌🌷 
 
-Sɪ vᴏᴜs lᴇ sᴏʏᴇz, vᴏᴜs pᴏᴜᴠᴇz nᴏᴜs ᴇɴᴠᴏʏᴇʀ dᴇs cᴀᴘᴛᴜʀᴇs d'écrᴀɴs
-à - @hyoshassistantBot"""
+Merci infiniment pour votre générosité et votre soutien. Vous êtes essentiel à notre mission !
+Le pouvoir de votre don Nous aidera à maintenir tous nos bots actifs  ❤️
+Merci infinement"""
 
 
-    PREMIUM_TXT = """<b>ᴀᴍéʟɪᴏʀᴇᴢ nᴏᴛʀᴇ sᴇʀᴠɪᴄᴇ ᴘʀᴇᴍɪᴜᴍ et prᴏfɪᴛᴇᴢ de fᴜɴᴄᴛɪᴏɴɴᴀʟɪᴛés ᴇxᴄʟᴜsɪᴠᴇs :
-○ Rᴇɴᴏᴍᴍᴀɢᴇ ɪʟʟɪᴍɪᴛé : rᴇɴᴏᴍᴍᴇᴢ ᴀᴜᴛᴀɴᴛ de fɪʟᴇs qᴜᴇ vᴏᴜs lᴇ sᴏʜᴀɪᴛᴇs sᴀɪɴs ᴀᴜcᴜɴᴇ rᴇsᴛʀɪᴄtɪᴏɴ.
-○ ᴀᴄᴄèss ᴀɴᴛɪᴄɪᴘé : sᴏʏᴇᴢ le prɪᴍɪᴇʀ à tᴇsᴛᴇʀ et ᴜsᴀɢᴇʀ nᴏᴛʀᴇs dᴇʟᴀᴛᴇs fᴜɴᴄᴛɪᴏɴɴᴀʟɪᴛéᴇs ᴀᴠᴀɴᴄᴇᴇs ᴀᴠᴀɴᴛ tᴏᴜᴛ ʟᴇ mᴏɴᴅᴇ.
+    PREMIUM_TXT = """<b>Améliorez notre service premium et profitez de fonctionnalités exclusives :  
+○ Renommage illimité : renommez autant de fichiers que vous le souhaitez sans aucune restriction.  
+○ Accès anticipé : soyez le premier à tester et utiliser nos dernières fonctionnalités avancées avant tout le monde.
 
-• Uᴛɪʟɪsᴇᴢ /plan pᴏᴜʀ vᴏɪʀ tᴏᴜs nᴏᴛʀᴇs pʟᴀɴs ᴇɴ ᴜɴᴇ fᴏɴᴄᴛɪᴏɴ ᴇᴄʜᴇᴍᴇ.
+• Utilisez /plan pour voir tous nos plans en une fonction échelle.
 
-➲ Pʀɪᴇʀᴇ ᴇᴛᴀᴘᴇ : pᴀʏᴇʀ ʟᴇ mᴏɴᴛᴀɴᴛ cᴏʀʀᴇspᴏɴᴅᴀɴᴛ à vᴏᴛʀᴇ pʟᴀɴ pʀéfᴇré à 
+➲ Première étape : payer le montant correspondant à votre plan préféré.  
 
-➲ Dᴇᴜxɪèmᴇ ᴇᴛᴀᴘᴇ : prᴇɴᴇᴢ ᴜɴᴇ cᴀᴘᴛᴜʀᴇ d'écran de vᴏᴛʀᴇ pᴀʏᴇᴍᴇɴᴛ et ᴘᴀʀᴀɢᴇᴢ-ʟᴀ ᴅɪʀᴇᴄᴛᴇᴍᴇɴᴛ ɪᴄɪ : @hyoshassistantBot 
+➲ Deuxième étape : prenez une capture d'écran de votre paiement et partagez-la directement ici : @Kingcey  
 
-➲ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇ : ᴏᴜ tᴇ́ʟᴇᴄʜᴇʀ ʟᴀ cᴀᴘᴛᴜʀᴇ d'écran ɪᴄɪ et rᴇᴘᴏɴᴅᴇᴢ ᴀᴠᴇᴄ lᴀ cᴏᴍᴍᴀɴᴅᴇ /bought.
+➲ Alternative : ou téléchargez la capture d'écran ici et répondez avec la commande /bought.
 
-Vᴏᴛʀᴇ pʟᴀɴ pʀᴇᴍɪᴜᴍ sᴇʀᴀ ᴀᴄᴛɪᴠé ᴀᴘʀès véʀɪꜰɪᴄᴀᴛɪᴏɴ.</b>"""
+Votre plan premium sera activé après vérification.</b>"""
 
 
     PREPLANS_TXT = """<b>👋 Sᴀʟᴜᴛ,
 
 🎖️ <u>ᴘʟᴀɴs ᴅɪsᴘᴏɴɪʙʟᴇs</u> :
 
-Tᴀʀɪғɪᴄᴀᴛɪᴏɴ :
-➜ Pʀᴇᴍɪᴜᴍ mᴇɴsᴜᴇʟ : 3.99$/mᴏɪs
-➜ Pʀᴇᴍɪᴜᴍ qᴜᴏᴛɪᴅɪᴇɴ : 0.99/jᴏᴜʀ
-➜ Pᴏᴜʀ l'ʜéʙᴇʀɢᴇᴍᴇɴᴛ ᴅᴇ bᴏᴛ : cᴏɴᴛᴀᴄᴛᴇᴢ @hyoshassistantBot
+Tarification :  
+➜ Premium mensuel : 3.99$ / mois  
+➜ Premium quotidien : 0.99 / jour  
+➜ Pour l'hébergement de bot : contactez @Kingcey  
 
-➲ Pᴀʏeʀ ɪᴄɪ - <code> @hyoshassistantBot </code>
+➲ Payer ici - <code> @Kingcey </code>
 
 ‼️Tᴇ́ʟᴇᴄʜargᴇʀ ʟᴀ cᴀᴘᴛᴜʀᴇ ᴅᴇ ʟ'ecrᴀn ᴅᴜ ᴘᴀʏᴇᴍᴇɴᴛ ɪᴄɪ ᴇᴛ ʀᴇᴘᴏɴᴅᴇᴢ ᴀᴠᴇᴄ lᴀ cᴏᴍᴍᴀɴᴅᴇ /bought.</b>"""
 
 
-    HELP_TXT = """<b>Vᴇᴏɪᴄɪ ʟᴇ ᴍᴇɴᴜ ᴅ'ᴀɪᴅᴇ ᴀᴠᴇᴄ ʟᴇs cᴏᴍᴍᴀɴᴅᴇs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs :
+    HELP_TXT = """<b>Voici le menu d'aide avec les commandes importantes :
 
-Fᴏɴᴄᴛɪᴏɴɴᴀʟɪᴛᴇs ɪᴍᴘʀᴇssɪᴏɴɴᴀɴᴛᴇs🫧
+Fonctionnalités impressionnantes🫧
 
-Lᴇ bᴏᴛ ᴅᴇ ʀᴇɴᴏᴍᴍᴀɢᴇ ᴇsᴛ ᴜɴ ᴏᴜᴛɪʟ ᴘʀᴀᴛɪqᴜᴇ qᴜɪ vᴏᴜs ᴀɪᴅᴇ ᴀ ʀᴇɴᴏᴍᴍᴇʀ ᴇᴛ ɢᴇʀᴇʀ vᴏᴛʀᴇs fɪʟᴇs ᴇᴀsɪʟʟᴇᴍᴇɴᴛ.
+Le bot de renommage est un outil pratique qui vous aide à renommer et gérer vos fichiers facilement.
 
-➲ /autorename : ʀᴇɴᴏᴍᴍᴇʀ ᴀᴜᴛᴏᴍᴀᴛɪqᴜᴇᴍᴇɴᴛ vᴏᴛʀᴇs fɪʟᴇs.
-➲ /metadata : cᴏᴍᴍᴀɴᴅᴇs pᴏᴜʀ ᴀᴄᴛɪᴠᴇʀ/ᴅᴇsᴀᴄᴛɪᴠᴇʀ ʟᴇs métᴀᴅᴀᴛᴀs.
-➲ /help : ᴏʙᴛᴇɴɪʀ ᴅᴇ ʟ'ᴀɪᴅᴇ ʀᴀᴘɪᴅᴇ.
-➲ /set_dump : Pour definir le channel à dumper(ou vos fichiers seront envoyés une foit renommeer)
+➲ /autorename : renommer automatiquement vos fichiers.  
+➲ /metadata : commandes pour activer/désactiver les métadatas.  
+➲ /help : obtenir de l'aide rapide.  
+➲ /set_dump : pour définir le canal à dumper (où vos fichiers seront envoyés une fois renommés).
 
-Nb: Assurer vous d'activer le mode sequentiel pour que le bot puisse trier et envoyer les fichiers dans le bon ordre."""
+Nb : Assurez-vous d'activer le mode séquentiel pour que le bot puisse trier et envoyer les fichiers dans le bon ordre."""
 
 
     SEND_METADATA = """
-<b>--ᴘᴀʀᴀᴍéᴛʀᴇs ᴅᴇs ᴍéᴛᴀᴅᴀᴛᴀ--</b>
+<b>-- Paramètres des métadatas.--</b>
 
-➜ /metadata : ᴀᴄᴛɪᴠᴇʀ ᴏᴜ supprimer ʟᴇs ᴍéᴛᴀᴅᴀᴛᴀᴛᴀ.
+➜ /metadata : Activer ou supprimer les métadatas.
 
-<b>ᴅéꜱᴄʀɪᴘᴛɪᴏɴ</b> : ʟᴇs ᴍéᴛᴀᴅᴀᴛᴀᴛᴀ ᴠᴏɴᴛ ᴍᴏᴅɪғɪᴇʀ ʟᴇs ꜰɪʟᴇs ᴠɪᴅéᴏ ᴍᴋᴠ, y ᴄᴏᴜᴍᴘʀᴇ ᴛᴏᴜᴛs ʟᴇs ᴛɪᴛʀᴇs ᴀᴜᴅɪᴏ, sᴛʀᴇᴀᴍs ᴇᴛ sᴜʙᴛɪᴛʀᴇs.""" 
+**Description** : Les métadatas vont modifier les fichiers vidéo MKV, y compris tous les titres audio, streams et sous-titres.""" 
 
 
     SOURCE_TXT = """
